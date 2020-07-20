@@ -10,4 +10,4 @@ puts "----------"
 
 @store.destroy
 
-puts Store.count
+puts "New store count after deleting the third store: #{Store.count}"
