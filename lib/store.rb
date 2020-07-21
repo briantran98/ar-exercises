@@ -7,7 +7,8 @@ class Store < ActiveRecord::Base
 
 	def inventory_check
 		if !mens_apparel && !womens_apparel
-			errors.add("Mens and womens apparel can't be false")
+			errors.add(:mens_apparel, "is false")
+			errors.add(:womens_apparel, "is also false")
 		end
 	end
 end
